@@ -233,6 +233,13 @@ body {
   height: 112px;
   background-color: #f4f4fd;
   border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bnf-icon-pic{
+
 }
 
 .benefits-main-title {
