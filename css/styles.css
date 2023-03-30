@@ -6,6 +6,10 @@
   --logo-color-style: #4d5ae5;
   --logo-main-color: #2e2f42;
   --filter-btn-color: #4d5ae5;
+  --bg-gradient: linear-gradient(
+    rgba(46, 47, 66, 0.7),
+    rgba(46, 47, 66, 0.7)
+  )
 }
 
 p,
@@ -165,6 +169,11 @@ body {
 
 .hero {
   background-color: var(--logo-main-color);
+  background-image: var(--bg-gradient),
+    url(../images/hero_bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .hero-main {
