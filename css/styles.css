@@ -118,6 +118,15 @@ body {
   color: var(--second-title-color);
 }
 
+/* .header-item::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 1.5px;
+  background-color: red;
+  flex-grow: 1;
+} */
+
 .header-link:hover {
   color: var(--active-link-color);
 }
@@ -165,6 +174,9 @@ body {
 /*? --------HERO-----------*/
 
 .hero {
+  height: 600px;
+  width: 1400px;
+  margin: 0 auto;
   background-color: var(--logo-main-color);
   background-image: var(--bg-gradient), url(../images/hero_bg.jpg);
   background-repeat: no-repeat;
@@ -498,30 +510,25 @@ body {
   padding: 12px 24px;
   color: var(--filter-btn-color);
   background-color: #f4f4fd;
+  cursor: pointer;
   border: 1px solid #e7e9fc;
   border-radius: 4px;
-  cursor: pointer;
 }
 
 .filter-btn:hover {
-  background: var(--active-link-color);
+  background-color: var(--active-link-color);
   color: #ffffff;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border: none;
 }
 
 .filter-btn:focus {
   background: var(--active-link-color);
   color: #ffffff;
-}
-
-.filter-btn-text {
-  color: #4d5ae5;
-}
-.filter-btn-text:hover {
-  color: #ffffff;
-}
-
-.filter-btn-text:focus {
-  color: #fff;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border: none;
 }
 
 /*? --------PROJECTS-----------*/
@@ -541,6 +548,11 @@ body {
 .project-item {
   background-color: #ffffff;
   width: calc((100% - 48px) / 3);
+}
+
+.project-item:hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .project-link {
